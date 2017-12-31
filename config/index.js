@@ -36,7 +36,7 @@ module.exports = {
             }
         },
         '/newapi': {
-            target: 'http://localhost:8001/',
+            target: 'http://localhost:3006/',
             changeOrigin: true,
             pathRewrite: {'^/newapi' : '/'},
         }
