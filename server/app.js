@@ -13,7 +13,14 @@ app.use('/api', proxy({
 ));
 
 app.use('/newapi', proxy({
-  target: 'http://localhost:3006/', 
+  target: 'http://localhost:8001/', 
+  changeOrigin: true, 
+  pathRewrite: {'^/newapi' : '/'}
+}
+));
+
+app.use('/myapi', proxy({
+  target: 'http://localhost:8001/', 
   changeOrigin: true, 
   pathRewrite: {'^/newapi' : '/'}
 }

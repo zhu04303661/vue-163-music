@@ -239,7 +239,7 @@ app.use("/user/record", require("./router/user_playrecord"))
 
 
 
-const port = 3006
+const port = 8001
 
 app.listen(port, () => {
   console.log(`server running @${port}`)
